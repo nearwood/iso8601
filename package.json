@@ -1,6 +1,6 @@
 {
   "name": "is8601",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Convert ISO 8601 date strings to Node (JS) Date objects.",
   "author": "Nick Earwood <nearwood@gmail.com> (http://nearwood.net)",
   "license": "MIT",
