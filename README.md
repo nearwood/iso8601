@@ -1,6 +1,7 @@
 # iso8601
 
 Convert ISO 8601 date strings to Node (JS) Date objects.
+Non ISO 8601 strings and non-string types pass through.
 Simple version of https://github.com/csnover/js-iso8601
 
 ## Example
@@ -10,11 +11,24 @@ var iso8601 = require('iso8601');
 
 var date = "1977-02-03T00:00:00Z";
 date = iso8601(date)
-
-typeof date
+console.log(typeof date)
 console.log(date);
-// "object"
+// object
 // Wed Feb 02 1977 19:00:00 GMT-0500 (Eastern Standard Time)
+
+var date = "bananas";
+date = iso8601(date)
+console.log(typeof date)
+console.log(date);
+// string
+// bananas
+
+var date = {a: 1};
+date = iso8601(date)
+console.log(typeof date)
+console.log(date);
+// object
+// Object {a: 1}
 ```
 
 ## Install
