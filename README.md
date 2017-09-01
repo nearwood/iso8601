@@ -11,24 +11,19 @@ var iso8601 = require('iso8601');
 
 var date = "1977-02-03T00:00:00Z";
 date = iso8601(date)
-console.log(typeof date)
-console.log(date);
-// object
-// Wed Feb 02 1977 19:00:00 GMT-0500 (Eastern Standard Time)
+console.log(typeof date, date)
+// object Wed Feb 02 1977 19:00:00 GMT-0500 (Eastern Standard Time)
 
 var date = "bananas";
 date = iso8601(date)
-console.log(typeof date)
-console.log(date);
-// string
-// bananas
+console.log(typeof date, date)
+// string bananas
 
 var date = {a: 1};
 date = iso8601(date)
-console.log(typeof date)
+console.log(typeof date, date)
 console.log(date);
-// object
-// Object {a: 1}
+// object Object {a: 1}
 ```
 
 ## Install
