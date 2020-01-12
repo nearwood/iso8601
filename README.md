@@ -22,7 +22,6 @@ console.log(typeof date, date)
 var date = {a: 1};
 date = iso8601(date)
 console.log(typeof date, date)
-console.log(date);
 // object Object {a: 1}
 ```
 
