@@ -4,6 +4,8 @@ Convert ISO 8601 date strings (from Node/v8) to Node Date objects.
 Non ISO 8601 strings and non-string types pass through.
 Simple version of https://github.com/csnover/js-iso8601
 
+[![npm version](https://badge.fury.io/js/%40nearwood%2Fiso8601.svg)](https://www.npmjs.com/package/@nearwood/iso8601)
+
 ## Example
 
 ```javascript
